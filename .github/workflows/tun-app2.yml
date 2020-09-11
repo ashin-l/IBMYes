@@ -36,6 +36,6 @@ jobs:
         ./IBM_Cloud_CLI/ibmcloud cf install -f -v 6.15.0
     - name: Restart IBM Cloud
       env:
-        IBM_APP_NAME: ${{ secrets.IBM_APP_NAME_1 }}
+        IBM_APP_NAME: ${{ secrets.IBM_APP_NAME_2 }}
       run: |
         ./IBM_Cloud_CLI/ibmcloud cf restart "$IBM_APP_NAME"
