@@ -1,10 +1,10 @@
-name: IBM Cloud Auto Restart
+name: IBM Cloud tun-app1 Auto Restart
 
 on:
   push:
     branches: [ master ]
   schedule:
-    - cron: '25 15 * * FRI'
+    - cron: '30 15 * * FRI'
 
 jobs:
   ibm-cloud-restart:
